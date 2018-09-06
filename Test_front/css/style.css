@@ -1,0 +1,227 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: 'Microsoft JhengHei';
+}
+@media screen and (max-width:767px){
+	html, body{
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+.bg01 ,.bg03 ,.bg05{
+  min-height: 1000px;
+  background-image:url(https://images.unsplash.com/photo-1458432449677-469b01f8ed08?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b679b91e49185da7e3d4beb4bca862e0&auto=format&fit=crop&w=1489&q=80);
+  background-position: center center;
+  background-size: cover; 
+  -moz-background-size: cover;
+  opacity: 0.9;
+}
+.bg02, .bg04{
+  min-height: 1000px;
+  background-image: url(https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cc6f92ef530adcffe696f5e2449ad62c&auto=format&fit=crop&w=1350&q=80);
+  background-position: center center;
+  background-size: cover; 
+  -moz-background-size: cover;
+  opacity: 0.9;
+}
+
+
+
+
+.container{
+  max-width:  100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bg01 img{
+  position: absolute;
+  top:45%;
+  max-height:50%;
+ 
+}
+.bg02 img{
+  position: absolute;
+  top:140%;
+  max-height:50%;
+}
+.bg03 img{
+  position: absolute;
+  top:240%;
+  max-height:50%;
+}
+.bg04 img{
+  position: absolute;
+  top:360%;
+  max-height:45%;
+}
+.bg05 img{
+  position: absolute;
+  top:455%;
+  max-height:50%;
+}
+@media screen and (max-width:767px){
+	img{
+		max-width: 30vh;
+	}
+}
+
+.titleBg{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100px;;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index:1;
+}
+.titleBg img{
+  position: relative;
+  width:15%;
+  left: 1500px;
+  top: 200px;
+}
+
+.fontStyle{
+  position: relative;
+  left:-50px;
+  top:-165px;
+  width: 140%;
+}
+.textBg{
+  position: absolute;
+  top: 2000px;
+  width: 400px;
+  height: atuo;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor:pointer;
+} /*內文區*/
+
+
+h4{
+  padding-left:10px;
+  padding-top: 10px;
+  margin-bottom: 2px;
+}
+
+li{
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+ul li{
+  list-style-type:none;
+}
+
+#B ul li{
+  display: inline;
+}
+
+#subContainer{
+    position: fixed;
+    left: -30px;     
+    top: 180px;
+    width: 200px;
+    height:auto;
+    background-color: rgba( 0, 0, 0, 0.8);
+    z-index:1;
+  }
+  #mainNavigation {
+    position: relative;
+    top: 10px; 
+  }
+  #mainNavigation li {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+  }
+  #mainNavigation a {
+    display: block;
+    padding: 0.9em;
+    overflow: hidden;
+    color: #888;
+    border-left: 0.5em solid #ddd;
+  }
+  mainNavigation .separate a {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  #mainNavigation span {
+    display: inline-block;
+    font-size: 0.9em;
+    line-height: 1;
+    vertical-align: middle;
+    width: 70%;
+    color: inherit;
+  }
+  #mainNavigation a,
+  #mainNavigation a:hover i,
+  #mainNavigation a:hover span {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  /*Position and Color*/
+  #home{
+    position: absolute;
+    max-width:350px;
+    top: 15vh;   
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+ 
+  #personalSkills{
+    position: absolute;
+    max-width:350px;
+    top:120vh;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #selfEvaluation{
+    position: absolute;
+    max-width:350px;
+    top: 220vh;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #schoolExperience{
+    position: absolute;
+    max-width:350px;
+    top:320vh;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #achievement{
+    position: absolute;
+    top:420vh;
+    max-width:350px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  #mainNavigation .home-click a:hover{
+    color: #00FA9A;
+    border-color: #00FA9A;
+    background-color:#F0FFF0;
+  }
+  #mainNavigation .personalSkills-click a:hover{
+    color: #E0C31F;
+    border-color: #E0C31F;
+    background-color: #FFFdEa;   
+  }
+  #mainNavigation .selfEvaluation-click a:hover{
+    color: #FFB15C; 
+    border-color:#FFB15C;
+    background-color: #FFF3E7;
+  }
+  #mainNavigation .schoolExperience-click a:hover{
+    color: #7AD8E9;  
+    border-color: rgb(122, 170, 233);
+    background-color: #F7FBFF;
+  }
+  #mainNavigation .achievement-click a:hover{
+    color: #e93269;
+    border-color:#e93269;
+    background-color: #FFE0EB;
+  }
+
